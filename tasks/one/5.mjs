@@ -3,5 +3,9 @@
     * @return {number}
 */
 export default function (list) {
-    return list.reduce((a, obj) => (Number.isFinite(obj) ? a+obj : a))
+    /*
+        На входе: массив чего угодно
+        На выходе: сумма всех чисел из массива
+        Задача: найти только числа и просуммировать
+    */
 }

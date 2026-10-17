@@ -3,8 +3,8 @@
     * @return {Object<string, number>}
 */
 export default function (list) {
-    return list.reduce((a, obj) => {
-        a[obj] = (a[obj] || 0)+1;
-        return a
-    }, {});
+    /*
+        На входе: массив чего угодно
+        На выходе: объект, где ключ — элемент массива, значение — сколько раз он встретился
+    */
 }

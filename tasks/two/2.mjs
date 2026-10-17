@@ -3,5 +3,8 @@
     * @return {number[]}
 */
 export default function (list) {
-    return list.filter(num => num % 2 === 0);
+    /*
+        На входе: массив чисел
+        На выходе: массив только чётных чисел
+    */
 }
