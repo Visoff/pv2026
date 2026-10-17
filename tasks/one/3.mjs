@@ -4,5 +4,5 @@
 */
 export default function (list) {
     // Я хочу вернуть массив с каждым элементом умноженным на 2
-    return list.map(i => i*2);
+    return list;
 }

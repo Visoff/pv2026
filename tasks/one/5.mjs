@@ -3,10 +3,9 @@
     * @return {number}
 */
 export default function (list) {
-    let ans = 0;
-    list.forEach(i => {
-       if(Number.isFinite(i)) ans += i;
-    });
-
-    return ans;
+    /*
+        На входе: массив чего угодно
+        На выходе: сумма всех чисел из массива
+        Задача: найти только числа и просуммировать
+    */
 }

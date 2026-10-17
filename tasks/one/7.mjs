@@ -1,7 +1,10 @@
 /**
- * @param {string} name
- * @return {string}
- */
+    * @param {string} name
+    * @return {string}
+*/
 export default function (name) {
-    return `Hello, ${name}!`
+    /*
+        На входе: Имя
+        На выходе: приветствие в формате "Hello, имя!"
+    */
 }
