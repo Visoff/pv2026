@@ -14,4 +14,17 @@ export default function (n) {
         Например:
         10 => [1, 2, "fizz", 4, "buzz", "fizz", 7, 8, "fizz", "buzz"]
     */
+   const list = [];
+   for(let i=1; i <= n; i++) {
+    if (i%3 === 0 && i%5 === 0) {
+        list.push("fizzbuzz")
+    } else if (i%3 === 0) {
+        list.push("fizz");
+    } else if (i%5 === 0) {
+        list.push("buzz");
+    } else {
+        list.push(i);
+    }
+   } 
+   return list
 }
