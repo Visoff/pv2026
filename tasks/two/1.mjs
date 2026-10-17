@@ -3,8 +3,6 @@
     * @return {number[]}
 */
 export default function (list) {
-    /*
-        На входе: массив чисел
-        На выходе: массив, где каждый элемент умножен на свой индекс
-    */
+    let i = 0;
+    return list.map(num => num*i++)
 }

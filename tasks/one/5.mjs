@@ -3,10 +3,5 @@
     * @return {number}
 */
 export default function (list) {
-    let ans = 0;
-    list.forEach(i => {
-       if(Number.isFinite(i)) ans += i;
-    });
-
-    return ans;
+    return list.reduce((a, obj) => (Number.isFinite(obj) ? a+obj : a))
 }
