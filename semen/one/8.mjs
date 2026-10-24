@@ -1,0 +1,14 @@
+/**
+    * @template T
+    * @param {T => T} f
+    * @return {T => T}
+*/
+export default function (f) {
+    /*
+        На входе: функция одного аргумента, возвращающая тот же тип
+        На выходе: функция, которая применяет f дважды
+    */
+    return function (x) {
+        return f(f(x));
+   }; 
+}
