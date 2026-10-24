@@ -9,4 +9,14 @@ export default function (list, keyFn) {
         На входе: массив и функция, которая по элементу возвращает ключ группы
         На выходе: объект, где по каждому ключу лежит массив подходящих элементов
     */
+   return list.reduce((result, a) => {
+        const k = keyFn(a); 
+        
+        if (!result[k]) {
+            result[k] = [];
+        }
+        
+        result[k].push(a);
+        return result;
+    }, {});  
 }
