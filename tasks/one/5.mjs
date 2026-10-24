@@ -3,11 +3,9 @@
     * @return {number}
 */
 export default function (list) {
-    let sum = 0;
-    for (const item of list) {
-        if (typeof item === 'number') {
-            sum += item;
-        }
-    }
-    return sum;
+    /*
+        На входе: массив чего угодно
+        На выходе: сумма всех чисел из массива
+        Задача: найти только числа и просуммировать
+    */
 }
