@@ -1,5 +1,5 @@
 export default function () {
-    let list = [];
+    const list = [];
     list = [1, 2, 3];
     return list;
 }
