@@ -1,0 +1,11 @@
+{
+  "name": "three",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DOM tasks",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  }
+}

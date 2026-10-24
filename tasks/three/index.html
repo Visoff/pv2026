@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru" data-tests="running">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="data:," />
+        <title>DOM tasks — тесты</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <main class="page">
+            <header>
+                <p class="eyebrow">Третий блок · DOM</p>
+                <h1>Проверка заданий</h1>
+                <p class="lead">
+                    Тесты запускаются прямо в браузере. Результаты появляются
+                    ниже, подробности с ошибками — в консоли.
+                </p>
+            </header>
+
+            <section class="summary" aria-live="polite">
+                <div>
+                    <div class="summary__count" id="summary">0 / 8</div>
+                    <div class="summary__status" id="status">Тесты выполняются…</div>
+                </div>
+                <button class="rerun" id="rerun" type="button">Перезапустить</button>
+            </section>
+
+            <ol class="results" id="results"></ol>
+
+            <p class="hint">
+                Если тест упал, читайте сообщение под его названием. Менять
+                <code>test.js</code> не нужно.
+            </p>
+        </main>
+
+        <!-- Сюда тесты монтируют решения. Контейнер спрятан с экрана, но остаётся
+             в документе, чтобы работали фокус и document.activeElement. -->
+        <div id="sandbox" aria-hidden="true"></div>
+
+        <script type="module" src="./test.js"></script>
+    </body>
+</html>
